@@ -86,7 +86,7 @@ ul{
 // room content//
 .rooms{
     background-color: azure; 
-    height: 70vh; 
+   height: auto;
     h1{
         padding: 40px;
         font-size: 30px;
@@ -97,9 +97,10 @@ ul{
     font-size: 20px;
 }
 .room-content{
-    display: flex;
-   width: 900px;
-    margin: 0 auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+   gap: 1rem;
+   margin: 0 auto;
 }
 .romm-item{ 
     p{
@@ -122,19 +123,20 @@ ul{
 
 //servises//
 .servis{
-    width: 100%;
-    height: 500px;
+  
     .ser-heder{
         padding: 40px;
         text-align: center;
     }
 }
 .servises{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+   gap: 1rem;
+   margin: 0 auto;
 }
 .servise-item{
-    width: 170px;
+    width: 70%;
     .fas{
         font-size: 30px;
         color: rgb(240, 197, 144);
@@ -150,6 +152,9 @@ ul{
     }
 }
 // Gelery //
+.gelery{
+    height: auto;
+}
 .title {
     font-size: 44px;
     font-weight: bold;
@@ -175,8 +180,10 @@ ul{
     overflow: hidden;
     font-size: 0;
     margin-top: 30px;
-    width: 700px;
-    margin: 0 auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem,2fr));
+   gap: 1rem;
+   margin: 0 auto;
   }
   .gallery-item{
     display: block;
@@ -226,16 +233,17 @@ ul{
  }
   //.Lates //
 .late{
-    display: flex;
-    justify-content: space-around;
-    width: 900px;
-    margin: 0 auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(50rem,1fr));
+   gap: 1rem;
+   align-items: center;
     opacity: 1;
 }
 .late-item{
-    width: 600px;
+    width: 60%;
     img{
         width: 80%;
+        align-items: center;
     }
     h2{
         font-size: 17px;
@@ -289,6 +297,74 @@ ul{
     }
     hr{
         width: 400px;
+    }
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .content-hotel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-hotel img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .room-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-content .room-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .room-content .room-item img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjustments for even smaller screens */
+    .heder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .hotel-text p {
+        font-size: 16px;
+    }
+
+    .room-content .room-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .room-content .room-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
