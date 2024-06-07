@@ -32,14 +32,13 @@ ul{
     }
 }
 .hotel{
-   height: 450px;
-    
+   height: auto;
+    margin-top: 30px;
 }
 .content-hotel{
-    width: 800px;
-    margin: 0 auto;
-     padding-top: 70px;
-    display:flex;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+   gap: 1rem;
     h1{
         padding: 10px;
     }
@@ -47,6 +46,9 @@ ul{
         padding: 10px;
         font-size: 15px;
         color: rgb(134, 134, 132);
+    }
+    img{
+        width: 60%;
     }
 }
 // Home//
@@ -132,13 +134,15 @@ ul{
 }
 .servises{
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+   grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
    gap: 1rem;
-   margin: 0 auto;
+
 }
 .servise-item{
+    margin: 0 auto;
     width: 70%;
     .fas{
+      align-items: center;
         font-size: 30px;
         color: rgb(240, 197, 144);
     }
@@ -163,7 +167,9 @@ ul{
     padding: 45px ;
     position: relative;
   }
-  
+  .gerely-l{
+    margin: 0 auto;
+  }
   .title:after {
     content: "";
     position: absolute;

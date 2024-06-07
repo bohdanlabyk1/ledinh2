@@ -17,16 +17,22 @@
       <div class="logo">
         <h1>Lux Hotel</h1>
       </div>
-      <div class="nav">
-         <nav>
-            <ul>
-             <li><a href="#">Home</a></li>
+      <button id="burger-toggle">Меню</button>
+
+<div id="burger-menu">
+    <h2>Меню бургерів</h2>
+    <ul id="burger-list">
+      <li><a href="#">Home</a></li>
              <li><a href="#hotel">About</a></li>
              <li><a href="#room">Rooms</a></li>
              <li><a href="#gelery">Blog</a></li>
              <li><a href="#servis">Pages</a></li>
              <li><a href="#">Contact</a></li>
-            </ul>
+    </ul>
+</div>
+      <div class="nav">
+         <nav>
+            
          </nav>  
       </div>
    </div>
@@ -43,7 +49,7 @@
    </section>
   <section class="hotel" >
    <div class="content-hotel">
-      <img src="image/job.jpg"  width="60%" height="260px">
+      <img src="image/job.jpg"  width="30%" height="auto">
       <div class="hotel-text">
          <h1><b>Relax ot Our</b> Honel</h1>
         <p>Lux Hotel and Suites is a family-owned Boutique Hotel that 
@@ -91,21 +97,25 @@
    <div class="gelery">
       <h2 class="title">Gallery</h2>
   <div class="gallery-list">
-   <a href="image/gallery1.jpg" class="gallery-item">
-      <div class="gallery-item-hover">Pul & Spa</div>
-      <img src="image/gallery1.jpg" alt="">
-   </a>
-   
-   <a href="image/gallery3.jpg" class="gallery-item">
-      <div class="gallery-item-hover">Friendly Atmosphere</div>
-      <img src="image/gallery3.jpg" alt="">
-   </a>
+   <div class="gelery-l">
+      <a href="image/gallery1.jpg" class="gallery-item">
+         <div class="gallery-item-hover">Pul & Spa</div>
+         <img src="image/gallery1.jpg" alt="">
+      </a>
+   </div>
+   <div class="gelery-l">
+      <a href="image/gallery3.jpg" class="gallery-item">
+         <div class="gallery-item-hover">Friendly Atmosphere</div>
+         <img src="image/gallery3.jpg" alt="">
+      </a>
+   </div>
+ <div class="gelery-l">
    <a href="image/gallery4.jpg" class="gallery-item">
       <div class="gallery-item-hover">Comfotable Rooms</div>
       <img src="image/gallery4.jpg" alt="">
    </a>
+ </div>
   </div>
-  
    </div>
  </section>
 
@@ -237,7 +247,7 @@
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
   crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-   
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(".gallery-list").magnificPopup({
       delegate: "a",
