@@ -100,9 +100,10 @@ ul{
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
    gap: 1rem;
-   margin: 0 auto;
+  
 }
 .romm-item{ 
+    margin: 0 auto;
     p{
         font-size: 20px;
         color:rgb(209, 184, 153);
@@ -183,7 +184,7 @@ ul{
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(15rem,2fr));
    gap: 1rem;
-   margin: 0 auto;
+  
   }
   .gallery-item{
     display: block;
@@ -236,11 +237,12 @@ ul{
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(50rem,1fr));
    gap: 1rem;
-   align-items: center;
+  
     opacity: 1;
 }
 .late-item{
-    width: 60%;
+   margin: 10px 50px;
+   width: 50%;
     img{
         width: 80%;
         align-items: center;
