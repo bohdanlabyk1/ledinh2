@@ -8,35 +8,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 </head>
 <body>
-   <heder>
-      
-   <div class="heder">
-      <div class="logo">
-        <h1>Lux Hotel</h1>
+   <nav class="nav-bar">
+      <div class="nav-container"> 
+         <a class="nav-logo" >Hotel</a>
+         <a class="nav-menu " id="nav-menu">☰ </a>
+      <ul class="nav-list " id="nav">
+      <li> <a href="#">About</a></li>
+      <li> <a href="#">Room</a></li>
+      <li> <a href="#">Gelery</a></li>
+      <li> <a href="#">Servis</a></li>
+      <li> <a href="#">New</a></li>
+      <li> <a href="#">Contact</a></li>
+      </ul>
       </div>
-      <button id="burger-toggle">Меню</button>
-
-<div id="burger-menu">
-    <h2>Меню бургерів</h2>
-    <ul id="burger-list">
-      <li><a href="#">Home</a></li>
-             <li><a href="#hotel">About</a></li>
-             <li><a href="#room">Rooms</a></li>
-             <li><a href="#gelery">Blog</a></li>
-             <li><a href="#servis">Pages</a></li>
-             <li><a href="#">Contact</a></li>
-    </ul>
-</div>
-      <div class="nav">
-         <nav>
-            
-         </nav>  
-      </div>
-   </div>
-   </heder>
+   </nav>
    <section class="home">
     <div class="hom">
     <div class="home-content">
@@ -176,53 +163,46 @@
  </section>
 
  <futer>
-   <div class="futer">
-      <div class="futer-heder">
-         <div class="futer-item">
+   <div class="footer">
+      <div class="footer-heder">
+         <div class="footer-item">
             <h1>Quick Links</h1>
             <hr>
+            <div class="link">
+               <div class="link-sektion">
+                <P>Our Room</P>
+                <P>Single Room</P>
+                <P>Double Room</P>
+                <P>Family Room</P>
+                <P>Luxury Room</P>
+               </div>
+      
+               <div class="link-sektion">
+                 <P>News</P>
+                 <P>Aboun us</P>
+                 <P>Login Page</P>
+                 <p>Registration</p>
+                 <P>Page</P>
+                 <P>Careers</P>
+                </div>
+                <div class="link-sektion">
+                 <P>Contakts</P>
+                 <P>Gellery</P>
+                 <P>Testimonials</P>
+                 <P>Our Histori</P>
+                 <P>Booking</P>
+                </div>
+                <div class="link-sektion">
+                 <P>Facebook</P>
+                 <P>Twiter</P>
+                 <P>Instagram</P>
+                
+                </div>
+              </div>
          </div>
-       
         <div class="futer-item">
          <h1>Contact Information</h1>
          <hr>
-        </div>
-       
-      
-      </div>
-      <div class="futer-content">
-         <div class="link">
-          <div class="link-sektion">
-           <P>Our Room</P>
-           <P>Single Room</P>
-           <P>Double Room</P>
-           <P>Family Room</P>
-           <P>Luxury Room</P>
-           
-          </div>
-         
-          <div class="link-sektion">
-            <P>News</P>
-            <P>Aboun us</P>
-            <P>Login Page</P>
-            <p>Registration</p>
-            <P>Page</P>
-            <P>Careers</P>
-           </div>
-           <div class="link-sektion">
-            <P>Contakts</P>
-            <P>Gellery</P>
-            <P>Testimonials</P>
-            <P>Our Histori</P>
-            <P>Booking</P>
-           </div>
-           <div class="link-sektion">
-            <P>Facebook</P>
-            <P>Twiter</P>
-            <P>Instagram</P>
-           
-           </div>
-         </div>
          <div class="contact">
             <div class="contact-item">
             <i class='fas fa-map-marked-alt' ></i>
@@ -240,14 +220,13 @@
            </div>
          </div>
       </div>
+        </div>      
+      </div>
+   
    </div>
  </futer>
- 
- <script src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-  crossorigin="anonymous"></script>
+   
  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(".gallery-list").magnificPopup({
       delegate: "a",
@@ -255,8 +234,9 @@
       gallery: {
         enabled: true
       }
-    });
+    })
   </script>
-  
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="index.js"></script>
 </body>
 </html>
